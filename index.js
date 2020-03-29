@@ -66,7 +66,7 @@ function createRock(x) {
    */
   function moveRock() {
     const rockHeight = positionToInteger(rock.style.top)
-    // rock.style.top = `${rockHeight}px`
+    rock.style.top = `${rockHeight-2}px`
     // implement me!
     // (use the comments below to guide you!)
     /**
