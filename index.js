@@ -118,6 +118,8 @@ function endGame() {
 
 function moveDodger(e) {
   if (e.which === LEFT_ARROW) {
+    e.preventDefault();
+    e.stopPropagation();
     moveDodgerLeft()
   }
   if (e.which === RIGHT_ARROW) {
@@ -135,9 +137,9 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   var leftNumber = positionToInteger(DODGER.style.left)
-  DODGER.style.left = `${leftNumber -= 4}px`
   if (leftNumber > 4) {
-    window.requestAnimationFrame(moveDodgerLeft)
+    window.requestAnimationFrame()
+    DODGER.style.left = `${leftNumber -= 4}px`
   }
   // implement me!
   /**
