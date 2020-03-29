@@ -65,9 +65,7 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    if (top < 200) {
     rock.style.top = `${top += 2}px`
-    }
     // implement me!
     // (use the comments below to guide you!)
     /**
@@ -82,7 +80,9 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
      else {
-       window.requestAnimationFrame(moveRock(), 1000)
+       if (top < 200) {
+         window.requestAnimationFrame(moveRock(), 1000)
+       }
      }
     /**
      * But if the rock *has* reached the bottom of the GAME,
