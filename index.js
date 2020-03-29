@@ -41,7 +41,7 @@ function checkCollision(rock) {
     (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgeRightEdge) ? true : false;
 
     (rockLeftEdge <= dodgeRightEdge && rockRightEdge > dodgeRightEdge) ? true : false;
-    
+
 
     if (false /**
                * Think about it -- what's happening here?
