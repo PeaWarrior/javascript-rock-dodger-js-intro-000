@@ -84,7 +84,7 @@ function createRock(x) {
          window.requestAnimationFrame(moveRock)
        }
        else {
-         $(this).remove()
+         remove(this)
        }
      }
     /**
