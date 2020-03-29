@@ -111,7 +111,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval)
-  let ROCKS = []
+  // ROCKS = []
 }
 
 function moveDodger(e) {
