@@ -89,8 +89,7 @@ function createRock(x) {
      * we should remove the rock from the DOM.
      */
      if (top >= 380){
-       const thisRock = this
-       $('.rock[0]').remove();
+       console.log(ROCKS)
      }
   }
 
