@@ -116,6 +116,7 @@ function endGame() {
   })
   alert('YOU LOSE!')
   START.style.display = 'initial'
+  DODGER.style.left = '0px'
 }
 
 function moveDodger(e) {
