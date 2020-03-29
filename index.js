@@ -145,6 +145,8 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
+  var leftNumber = positionToInteger(DODGER.style.left)
+  DODGER.style.left = `${leftNumber += 4}px`
   // implement me!
   /**
    * This function should move DODGER to the right
