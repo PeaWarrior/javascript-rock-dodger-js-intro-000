@@ -60,7 +60,7 @@ function checkCollision(rock) {
     // ) {
     //   return true
     // }
-  // }
+  }
 }
 
 function createRock(x) {
