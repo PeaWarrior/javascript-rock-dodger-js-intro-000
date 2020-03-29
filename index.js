@@ -119,7 +119,7 @@ function endGame() {
   alert('YOU LOSE!')
   START.style.display = 'initial'
   DODGER.style.left = '180px'
-
+  cancelAnimationFrame(req)
 }
 
 function moveDodger(e) {
