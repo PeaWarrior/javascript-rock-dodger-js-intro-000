@@ -139,7 +139,6 @@ function moveDodgerLeft() {
     DODGER.style.left = `${leftNumber -= 4}px`
     window.requestAnimationFrame(moveDodgerLeft)
   }
-  // window.requestAnimationFrame(moveDodgerLeft)
   // implement me!
   /**
    * This function should move DODGER to the left
