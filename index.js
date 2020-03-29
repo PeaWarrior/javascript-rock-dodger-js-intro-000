@@ -65,8 +65,9 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    const rockHeight = positionToInteger(rock.style.top)
-    rock.style.top = `${rockHeight+2}px`
+    var rockTopNumber = rock.style.top.replace('px', '');
+    var rockTop = parseInt(rockTopNumber, 10)
+    rock.style.top = `${rockTop + 2}px`;
     // implement me!
     // (use the comments below to guide you!)
     /**
