@@ -89,7 +89,7 @@ function createRock(x) {
      * we should remove the rock from the DOM.
      */
      if (top >= 380){
-       $(GAME).remove(.rock)
+       console.log('hey')
      }
   }
 
