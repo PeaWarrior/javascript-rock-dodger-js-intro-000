@@ -68,7 +68,7 @@ function createRock(x) {
     // var rockTopNumber = rock.style.top.replace('px', '');
     // var rockTop = parseInt(rockTopNumber, 10)
     const rockTop = positionToInteger(rock.style.top)
-    rock.style.top = `${rockTop + 2}px`;
+    rock.style.top = `${rockTop + 0}px`;
     // implement me!
     // (use the comments below to guide you!)
     /**
