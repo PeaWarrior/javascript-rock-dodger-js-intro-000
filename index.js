@@ -90,7 +90,7 @@ function createRock(x) {
      */
      if (top >= 380){
        const thisRock = this
-       $('.rock:last').remove();
+       $('.rock[0]').remove();
      }
   }
 
