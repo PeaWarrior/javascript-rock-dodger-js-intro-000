@@ -17,6 +17,8 @@ var gameInterval = null
  * but all of your work should happen below.
  */
 
+ var req;
+
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
@@ -117,6 +119,7 @@ function endGame() {
   alert('YOU LOSE!')
   START.style.display = 'initial'
   DODGER.style.left = '180px'
+
 }
 
 function moveDodger(e) {
@@ -144,7 +147,7 @@ function moveDodgerLeft() {
   var leftNumber = positionToInteger(DODGER.style.left)
   if (leftNumber >= 4) {
     DODGER.style.left = `${leftNumber -= 4}px`
-    window.requestAnimationFrame(moveDodgerLeft)
+    req = window.requestAnimationFrame(moveDodgerLeft)
   }
   // implement me!
   /**
@@ -157,7 +160,7 @@ function moveDodgerRight() {
   var leftNumber = positionToInteger(DODGER.style.left)
   if (leftNumber <= 356) {
     DODGER.style.left = `${leftNumber += 4}px`
-    window.requestAnimationFrame(moveDodgerRight)
+    req = window.requestAnimationFrame(moveDodgerRight)
   }
   // implement me!
   /**
