@@ -85,7 +85,7 @@ function createRock(x) {
        }
      }
      if (top === 380) {
-       $(GAME).remove(rock)
+       $(GAME).remove(this)
      }
     /**
      * But if the rock *has* reached the bottom of the GAME,
