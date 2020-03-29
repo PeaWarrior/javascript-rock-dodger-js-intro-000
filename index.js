@@ -17,7 +17,6 @@ var gameInterval = null
  * but all of your work should happen below.
  */
 
- var req;
 
 function checkCollision(rock) {
   // implement me!
