@@ -144,8 +144,9 @@ function moveDodgerLeft() {
   var leftNumber = positionToInteger(DODGER.style.left)
   if (leftNumber >= 4) {
     DODGER.style.left = `${leftNumber -= 4}px`
-    window.requestAnimationFrame(moveDodgerLeft)
   }
+  window.requestAnimationFrame(moveDodgerLeft)
+  
   // implement me!
   /**
    * This function should move DODGER to the left
