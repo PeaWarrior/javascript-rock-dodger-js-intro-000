@@ -36,11 +36,11 @@ function checkCollision(rock) {
     // FIXME: The rock is 20 pixel's wide -- how do we get the right edge?
     const rockRightEdge = positionToInteger(rock.style.left) + 20;
 
-    (rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) ? true : false;
-
-    (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) ? true : false;
-
-    (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge) ? true : false;
+    // (rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) ? true : false;
+    //
+    // (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) ? true : false;
+    //
+    // (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge) ? true : false;
 
 
     // if (false /**
