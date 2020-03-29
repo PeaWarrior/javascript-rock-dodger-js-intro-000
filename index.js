@@ -80,7 +80,7 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
      else {
-       if (top < 200) {
+       if (top < 400) {
          window.requestAnimationFrame(moveRock)
        }
      }
