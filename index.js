@@ -65,7 +65,9 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
+    if (top < 200) {
     rock.style.top = `${top += 2}px`
+    }
     // implement me!
     // (use the comments below to guide you!)
     /**
