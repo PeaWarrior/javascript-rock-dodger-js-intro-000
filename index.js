@@ -84,7 +84,7 @@ function createRock(x) {
          window.requestAnimationFrame(moveRock)
        }
      }
-     if (top === 380) {
+     if (top >= 380) {
        $(GAME).remove(this)
      }
     /**
