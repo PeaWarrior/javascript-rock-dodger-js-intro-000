@@ -38,9 +38,9 @@ function checkCollision(rock) {
 
     (rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerRightEdge) ? true : false;
 
-    (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgeRightEdge) ? true : false;
+    (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) ? true : false;
 
-    (rockLeftEdge <= dodgerRightEdge && rockRightEdge > dodgeRightEdge) ? true : false;
+    (rockLeftEdge <= dodgerRightEdge && rockRightEdge > dodgerRightEdge) ? true : false;
 
 
     // if (false /**
