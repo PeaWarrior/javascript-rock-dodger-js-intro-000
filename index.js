@@ -91,6 +91,7 @@ function createRock(x) {
      if (top >= 380){
        const thisRock = this
        $('.rock').remove();
+       return
      }
   }
 
